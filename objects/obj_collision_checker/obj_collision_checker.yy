@@ -1,13 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_game_controller",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_collision_checker",
+  "eventList":[],
   "managed":true,
-  "name":"obj_game_controller",
+  "name":"obj_collision_checker",
   "overriddenProperties":[],
   "parent":{
     "name":"misc",

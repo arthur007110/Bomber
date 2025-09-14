@@ -11,3 +11,10 @@ function destroy_random_walls(){
 }
 
 destroy_random_walls();
+
+cell_size = 32;
+cells_h = room_width div cell_size;
+cells_v = room_height div cell_size;
+
+grid = mp_grid_create(0, 0, cells_h, cells_v, cell_size, cell_size);
+mp_grid_add_instances(grid, obj_wall, false);

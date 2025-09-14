@@ -9,10 +9,14 @@ function enemy_search_safe_place(){ // Implementar
 }
 
 function enemy_move(){
-
+	
 }
 
-function enemy_move(){
 
+function look_for_safe_place(_x, _y, nearest) {
+	
 }
 
+function look_for_bomb_place(_x, _y, nearest) {
+
+}
