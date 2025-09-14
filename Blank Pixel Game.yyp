@@ -46,6 +46,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"scr_bomb","path":"scripts/scr_bomb/scr_bomb.yy",},},
     {"id":{"name":"scr_debug","path":"scripts/scr_debug/scr_debug.yy",},},
+    {"id":{"name":"scr_enemy","path":"scripts/scr_enemy/scr_enemy.yy",},},
     {"id":{"name":"scr_movimentation","path":"scripts/scr_movimentation/scr_movimentation.yy",},},
     {"id":{"name":"scr_utils","path":"scripts/scr_utils/scr_utils.yy",},},
     {"id":{"name":"spr_bomb_place_indicator","path":"sprites/spr_bomb_place_indicator/spr_bomb_place_indicator.yy",},},
