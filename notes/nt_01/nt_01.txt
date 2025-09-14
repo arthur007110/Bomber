@@ -1,0 +1,52 @@
+elementos
+
+player
+X Pode posicionar bombas apenas nos tiles
+X pode se movimentar entre os espaços vazios
+paredes
+X Destrutíveis
+X Indestrutíveis
+
+X bombas
+
+X itens de upgrades
+- força da explosão (aumenta a quantidade de tiles em que a explosão irá alcançar)
+- velocidade (velocidade do player incrementada)
+- mais bombas (permite o jogador posicionar mais bombas ao mesmo tempo)
+
+inimigos
+- IA
+
+basico
+X mapa pré gerado com paredes destrutíveis e destrutíveis
+X player posicionado
+X player pode posicionar bombas
+X bombas destroem tiles destrutíveis
+
+Next steps
+- Inimigos
+- IA para inimigos
+- Não permitir atravessar bombas
+- Powerup raro para chutar bombas
+- controlador de partida
+	- Iniciar partida
+	- Contador de tempo para eliminar todos os oponentes
+	- Sistema de shutdown para finalizar partida forçadamente após o tempo acabar
+	- Mostrar vencedor ao final
+- Modo single player e multiplayer
+- Multiplayer local para 2 jogadores (?)
+- Multiplayer online
+- Tela de título
+- 5 fases diferentes
+	- Fase de gelo com chão escorregadio
+	- fase de fogo com chão que pega fogo de tempos em tempos
+	- Fase elétrica com disparos de raio que saem de aparelhos elétricos (não destrutíveis) de tempos em tempos
+	- Fase galactica que possui teleportadores entre pontos da fase
+	- Fase com dois andares transitáveis via escadas
+- Personalizador de partidas multiplayer onse será permitido selecionar:
+	- Quais powerups aparecerão
+	- Qual fase os jogadores irão jogar, ou selecionar randomicamente podendo eliminar as indesejadas
+	- Tempo da partida
+	- Quantidade de rounds (Md1, Md3, Md5, Md7, Md9)
+	- Permitir selecionar times para 4 ou mais jogadores
+	
