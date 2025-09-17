@@ -24,9 +24,10 @@ X player pode posicionar bombas
 X bombas destroem tiles destrutíveis
 
 Next steps
-- Inimigos
-- IA para inimigos
-- Não permitir atravessar bombas
+X Inimigos
+X IA para inimigos
+X Não permitir atravessar bombas
+- Não permitir que o inimigo atravesse bombas
 - Powerup raro para chutar bombas
 - controlador de partida
 	- Iniciar partida

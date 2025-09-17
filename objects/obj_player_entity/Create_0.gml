@@ -8,3 +8,4 @@ available_bombs = max_bombs;
 bomb_strength = 1;
 bombs_stength_limit = 5;
 
+dead = false;
