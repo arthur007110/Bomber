@@ -28,7 +28,7 @@ X Inimigos
 X IA para inimigos
 X Não permitir atravessar bombas
 - Não permitir que o inimigo atravesse bombas
-- Powerup raro para chutar bombas
+- Powerup raro para chutar bombas (menos prioridade)
 - controlador de partida
 	- Iniciar partida
 	- Contador de tempo para eliminar todos os oponentes

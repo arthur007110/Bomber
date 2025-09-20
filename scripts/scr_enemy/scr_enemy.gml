@@ -132,32 +132,6 @@ function does_the_bomb_destroy_anything(bomb_x, bomb_y, bomb_strength, ds_grid){
 		if(has_destoyable_direction(ds_grid, bomb_x, bomb_y, dir, bomb_strength)) return true;
 		dir += 90;
 	}
-	//for(var i = 0; i <= bomb_strength; i++) {
-	//	if(look_up){
-	//		if(bomb_y - i >= 0){
-	//			if(ds_grid_get(ds_grid, bomb_x, bomb_y - i) == 2) return true;
-	//			else if(ds_grid_get(ds_grid, bomb_x, bomb_y - i) == 1) look_up = false;
-	//		}
-	//	}
-	//	if(look_down){
-	//		if(bomb_y + i <= ds_grid_height(ds_grid)){
-	//			if(ds_grid_get(ds_grid, bomb_x, bomb_y + i) == 2) return true;
-	//			else if(ds_grid_get(ds_grid, bomb_x, bomb_y + i) == 1) look_down = false;
-	//		}
-	//	}
-	//	if(look_left){
-	//		if(bomb_x - i >= 0){
-	//			if(ds_grid_get(ds_grid, bomb_x - i, bomb_y) == 2) return true;
-	//			else if(ds_grid_get(ds_grid, bomb_x - i, bomb_y) == 1) look_left = false;
-	//		}
-	//	}
-	//	if(look_rigth){
-	//		if(bomb_x + i >= ds_grid_width(ds_grid)){
-	//			if(ds_grid_get(ds_grid, bomb_x + i, bomb_y) == 2) return true;
-	//			else if(ds_grid_get(ds_grid, bomb_x + i, bomb_y) == 1) look_rigth = false;
-	//		}
-	//	}
-	//}
 	return false;
 }
 
@@ -231,4 +205,23 @@ function enemy_search_bomb_place2(_x, _y, bomb_strength, path){
 		return [bomb_place, hide_place];
 	}
 	return -1;
+}
+
+function enemy_detect_obstructed_path(instance){
+	// TORNAR CELL_SIZE UMA VARIÁVEL GLOBAL
+	var cell_size = 32;
+	with(instance){
+		if (path_index != -1) {
+		    var next_x = path_get_point_x(path_index, 1);
+		    var next_y = path_get_point_y(path_index, 1);
+		    // converte para posição de grid
+		    var grid_x = (next_x div cell_size) * cell_size + cell_size div 2;
+		    var grid_y = (next_y div cell_size) * cell_size + cell_size div 2;
+		    if (position_meeting(grid_x, grid_y, obj_wall) || position_meeting(grid_x, grid_y, obj_bomb)) {
+		        path_end();
+		        state =  ENEMY_STATE.SEARCH_SAFE_PLACE;
+		    }
+		}
+	}
+	
 }

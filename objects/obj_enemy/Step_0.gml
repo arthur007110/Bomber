@@ -27,6 +27,7 @@ switch(state){
 		state = ENEMY_STATE.MOVE_HIDE;
 		break;
 	case ENEMY_STATE.MOVE_BOMB: // Implementa
+		enemy_detect_obstructed_path(self);
 		destiny_x = destiny[0].x * 32 + 16;
 		destiny_y = destiny[0].y * 32 + 16;
 		if(round(x) == destiny_x and round(y) == destiny_y) {
@@ -44,6 +45,7 @@ switch(state){
 		}
 		break;
 	case ENEMY_STATE.MOVE_HIDE: // Implementa
+		enemy_detect_obstructed_path(self);
 		destiny_x = destiny[0].x * 32 + 16;
 		destiny_y = destiny[0].y * 32 + 16;
 		if(round(x) == destiny_x and round(y) == destiny_y) {
